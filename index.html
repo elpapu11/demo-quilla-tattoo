@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quilla Tattoo Cusco | Fine Line Tattoo in San Blas</title>
+    <meta name="description" content="Private visual demo for a boutique tattoo and piercing studio in San Blas, Cusco. Fine line, custom designs and WhatsApp booking.">
+    <meta name="keywords" content="fine line tattoo Cusco, tattoo San Blas, tattoo studio Cusco, piercing Cusco, custom tattoo Cusco, dotwork Cusco">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
+</head>
+<body>
+
+    <!-- DEMO BANNER -->
+    <div class="demo-banner" id="demoBanner">
+        <div class="demo-banner__inner">
+            <span class="demo-banner__icon">✦</span>
+            <p>Visual demo · Not an official website · Images subject to authorization</p>
+            <button class="demo-banner__close" onclick="closeBanner()" aria-label="Close banner">×</button>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="nav" id="navbar">
+        <div class="nav__inner">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-moon">☽</span>
+                <span class="nav__logo-text">Quilla</span>
+            </a>
+            <div class="nav__menu" id="navMenu">
+                <a href="#about" class="nav__link">About</a>
+                <a href="#portfolio" class="nav__link">Portfolio</a>
+                <a href="#services" class="nav__link">Services</a>
+                <a href="#aftercare" class="nav__link">Aftercare</a>
+                <a href="#location" class="nav__link">Location</a>
+                <a href="https://wa.me/51952644702" class="nav__cta" target="_blank" rel="noopener">
+                    <span>Book</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+            </div>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="hero">
+        <div class="hero__bg-pattern"></div>
+        <div class="hero__inner">
+            <div class="hero__content">
+                <div class="hero__label">
+                    <span class="hero__label-line"></span>
+                    <span class="hero__label-text">San Blas, Cusco · Tattoo Studio</span>
+                </div>
+                <h1 class="hero__title">
+                    Fine Line Tattoo<br>in Cusco
+                </h1>
+                <p class="hero__subtitle" data-es="Tatuajes delicados personalizados y piercing en el corazón de San Blas.">
+                    Delicate custom tattoos and piercing in the heart of San Blas.
+                </p>
+                <div class="hero__actions">
+                    <a href="https://wa.me/51952644702" class="btn btn--primary" target="_blank" rel="noopener">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        <span>Book by WhatsApp</span>
+                    </a>
+                    <a href="#portfolio" class="btn btn--secondary">
+                        <span>View portfolio</span>
+                        <span class="btn__arrow">↓</span>
+                    </a>
+                </div>
+                <div class="hero__note">
+                    <span class="hero__note-dot"></span>
+                    <span>Private visual demo · Not official</span>
+                    <span class="hero__note-es">Demo visual privada · No oficial</span>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="hero__image-frame">
+                    <img src="assets/images/3_Quilla_Tattoo_Cuzco_2026_All_You.png" alt="Fine line moon tattoo by Quilla Tattoo Cusco - dotwork crescent moon with ornamental details">
+                    <div class="hero__image-caption">
+                        <span>Custom fine line · Dotwork moon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator">
+            <div class="hero__scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- TRUST STRIP -->
+    <section class="trust-strip">
+        <div class="trust-strip__inner">
+            <div class="trust-item">
+                <span class="trust-item__icon">✦</span>
+                <span class="trust-item__text">Fine Line & Custom Designs</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-item__icon">✦</span>
+                <span class="trust-item__text">English-Friendly Service</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-item__icon">✦</span>
+                <span class="trust-item__text">San Blas, Cusco</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-item__icon">✦</span>
+                <span class="trust-item__text">Tattoo + Piercing</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-item__icon">✦</span>
+                <span class="trust-item__text">WhatsApp Booking</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY TRAVELERS CHOOSE QUILLA -->
+    <section class="about section" id="about">
+        <div class="section__inner">
+            <div class="about__header">
+                <span class="section__label">Why travelers choose us</span>
+                <h2 class="section__title" data-es="Por qué los viajeros eligen Quilla">
+                    A thoughtful experience<br>for travelers
+                </h2>
+            </div>
+            <div class="about__grid">
+                <div class="about-card">
+                    <div class="about-card__number">01</div>
+                    <h3 class="about-card__title" data-es="Tatuajes delicados para tu viaje">Delicate tattoos for your trip</h3>
+                    <p class="about-card__text" data-es="Ideal si buscas un tatuaje fine line en Cusco: líneas limpias, diseños personalizados y una experiencia artística que se suma a tu viaje.">
+                        Fine line work that ages gracefully. Clean, precise lines — perfect for a meaningful souvenir from Cusco.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card__number">02</div>
+                    <h3 class="about-card__title" data-es="Ubicación artística en San Blas">In the artistic heart of San Blas</h3>
+                    <p class="about-card__text" data-es="Ubicados en el barrio bohemio de San Blas, rodeado de arte, galerías y la magia del Cusco colonial.">
+                        Located in San Blas, Cusco's most artistic neighborhood — surrounded by galleries, studios, and colonial charm.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card__number">03</div>
+                    <h3 class="about-card__title" data-es="Consulta rápida por WhatsApp">Quick WhatsApp consultation</h3>
+                    <p class="about-card__text" data-es="Envía tu idea por WhatsApp, consulta disponibilidad y responde tus dudas antes de visitar el estudio.">
+                        Send your idea, ask about availability, and get answers before you even step into the studio.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card__number">04</div>
+                    <h3 class="about-card__title" data-es="Experiencia personalizada">Personalized experience</h3>
+                    <p class="about-card__text" data-es="Cada diseño se adapta a tu estilo. Trabajamos contigo para crear algo único y significativo.">
+                        Every design is adapted to your style. We work with you to create something unique and meaningful.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO / GALLERY -->
+    <section class="portfolio section" id="portfolio">
+        <div class="section__inner">
+            <div class="portfolio__header">
+                <span class="section__label">Portfolio</span>
+                <h2 class="section__title" data-es="Portafolio">
+                    Selected work
+                </h2>
+                <p class="section__subtitle" data-es="Una muestra del trabajo real de Quilla Tattoo.">
+                    A selection of custom fine line and dotwork tattoos created at our San Blas studio.
+                </p>
+            </div>
+            <div class="portfolio__gallery">
+                <div class="portfolio__item portfolio__item--large">
+                    <img src="assets/images/1_Quilla_Tattoo_Cuzco_2026_All_You.png" alt="Ornamental moon dotwork tattoo on arm - geometric crescent with mandala details by Quilla Tattoo">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__tag">Dotwork</span>
+                        <h4 class="portfolio__name">Ornamental Moon</h4>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="assets/images/2_Quilla_Tattoo_Cuzco_2026_All_You.png" alt="Geometric owl tattoo with Inca-inspired patterns on upper arm by Quilla Tattoo">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__tag">Geometric</span>
+                        <h4 class="portfolio__name">Inca Owl</h4>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="assets/images/5_Quilla_Tattoo_Cuzco_2026_All_You.png" alt="Fine line hummingbird tattoo with geometric patterns on arm by Quilla Tattoo">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__tag">Fine Line</span>
+                        <h4 class="portfolio__name">Geometric Hummingbird</h4>
+                    </div>
+                </div>
+                <div class="portfolio__item portfolio__item--wide">
+                    <img src="assets/images/6_Quilla_Tattoo_Cuzco_2026_All_You.png" alt="Minimalist sun and moon fine line tattoo on arm by Quilla Tattoo">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__tag">Minimalist</span>
+                        <h4 class="portfolio__name">Sun & Moon</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__note">
+                <p>✦ Images from Quilla Tattoo's TripAdvisor gallery · Used for private demo only · Final version requires authorization</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEET THE ARTIST -->
+    <section class="artist section" id="artist">
+        <div class="section__inner">
+            <div class="artist__layout">
+                <div class="artist__content">
+                    <span class="section__label">Meet the artist</span>
+                    <h2 class="section__title" data-es="Conoce al equipo">Roxanna at Quilla</h2>
+                    <p class="artist__text" data-es="Roxanna es la artista principal de Quilla Tattoo. Especializada en fine line, dotwork y diseños personalizados, ha recibido consistentemente elogios por su precisión, atención al detalle y trato cálido con cada cliente.">
+                        Roxanna is the lead artist at Quilla Tattoo. Specializing in fine line, dotwork, and custom designs, she has consistently received praise for her precision, attention to detail, and warm approach with every client.
+                    </p>
+                    <blockquote class="artist__quote">
+                        <p>"Roxy's line work is beautiful. Very clean lines. She definitely has one of the best clean fine lines I've ever seen. Super detail oriented and has magical hands."</p>
+                        <cite>— Review via <a href="https://wanderlog.com/place/details/7842271/quilla-tattoo-cusco" target="_blank" rel="noopener">Wanderlog</a></cite>
+                    </blockquote>
+                    <div class="artist__meta">
+                        <div class="artist__meta-item">
+                            <span class="artist__meta-label">Specialty</span>
+                            <span class="artist__meta-value">Fine Line · Dotwork · Custom</span>
+                        </div>
+                        <div class="artist__meta-item">
+                            <span class="artist__meta-label">Languages</span>
+                            <span class="artist__meta-value">English · Español</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist__image">
+                    <div class="artist__image-frame">
+                        <img src="assets/images/4_QUILLA_TATTOO_CUSCO_Cuzco_Qu_SABER.png" alt="Close-up detail of ornamental moon dotwork tattoo showing fine line precision">
+                        <div class="artist__image-caption">
+                            <span>Fine line precision · Detail shot</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services section" id="services">
+        <div class="section__inner">
+            <div class="services__header">
+                <span class="section__label">Services</span>
+                <h2 class="section__title" data-es="Servicios">Tattoo & Piercing</h2>
+            </div>
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M7 12h10M12 7v10"/></svg>
+                    </div>
+                    <h3 class="service-card__title" data-es="Tatuajes Fine Line">Fine Line Tattoos</h3>
+                    <p class="service-card__text" data-es="Líneas delicadas y precisas. Ideal para diseños minimalistas, detallados y elegantes que envejecen con gracia.">
+                        Delicate, precise lines. Ideal for minimalist, detailed, and elegant designs that age gracefully.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20 14.5 14.5 0 000-20"/><path d="M2 12h20"/></svg>
+                    </div>
+                    <h3 class="service-card__title" data-es="Diseños Personalizados">Custom Designs</h3>
+                    <p class="service-card__text" data-es="Cada tatuaje es diseñado a medida. Trae tu idea y la desarrollamos juntos hasta lograr algo único.">
+                        Every tattoo is custom-designed. Bring your idea and we'll develop it together into something unique.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Dotwork</h3>
+                    <p class="service-card__text" data-es="Técnica de puntillismo para crear sombras, texturas y formas geométricas con precisión artística.">
+                        Pointillism technique creating shades, textures, and geometric forms with artistic precision.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="M12 8v2M12 14v2M8 12h2M14 12h2"/></svg>
+                    </div>
+                    <h3 class="service-card__title" data-es="Piercing">Piercing</h3>
+                    <p class="service-card__text" data-es="Servicio de piercing profesional. Asesoramiento en colocación y cuidados post-procedimiento.">
+                        Professional piercing service. Placement advice and aftercare guidance included.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AFTERCARE -->
+    <section class="aftercare section" id="aftercare">
+        <div class="section__inner">
+            <div class="aftercare__header">
+                <span class="section__label">Aftercare</span>
+                <h2 class="section__title" data-es="Cuidados">For travelers</h2>
+                <p class="section__subtitle" data-es="Información práctica para quienes se tatúan durante su viaje.">
+                    Practical guidance for those getting tattooed while traveling.
+                </p>
+            </div>
+            <div class="aftercare__grid">
+                <div class="aftercare-card">
+                    <div class="aftercare-card__num">01</div>
+                    <h3 class="aftercare-card__title" data-es="Antes de tu cita">Before your appointment</h3>
+                    <ul class="aftercare-card__list">
+                        <li data-es="Descansa bien la noche anterior">Get good rest the night before</li>
+                        <li data-es="Come algo antes de venir">Eat a solid meal before coming</li>
+                        <li data-es="Hidrátate bien">Stay well hydrated</li>
+                        <li data-es="Evita el alcohol 24h antes">Avoid alcohol 24 hours prior</li>
+                        <li data-es="Lleva una prenda cómoda">Wear comfortable clothing</li>
+                    </ul>
+                </div>
+                <div class="aftercare-card">
+                    <div class="aftercare-card__num">02</div>
+                    <h3 class="aftercare-card__title" data-es="Cuidados básicos">Aftercare basics</h3>
+                    <ul class="aftercare-card__list">
+                        <li data-es="Lava con agua y jabón neutro">Wash with unscented soap and water</li>
+                        <li data-es="Aplica una capa fina de crema">Apply a thin layer of recommended cream</li>
+                        <li data-es="No rasques ni frotes">Don't scratch or rub the area</li>
+                        <li data-es="Evita sol directo y piletas">Avoid direct sun and pools</li>
+                        <li data-es="Deja que la piel respire">Let the skin breathe</li>
+                    </ul>
+                </div>
+                <div class="aftercare-card">
+                    <div class="aftercare-card__num">03</div>
+                    <h3 class="aftercare-card__title" data-es="Viajar después de tatuarte">Traveling after your tattoo</h3>
+                    <ul class="aftercare-card__list">
+                        <li data-es="Protege del sol en caminatas">Protect from sun during hikes</li>
+                        <li data-es="Lleva crema hidratante">Bring moisturizer with you</li>
+                        <li data-es="Evita bañarte en aguas termales">Avoid hot springs and thermal baths</li>
+                        <li data-es="Lleva ropa que no roce">Wear loose, non-rubbing clothing</li>
+                        <li data-es="Consulta ante cualquier duda">Ask your artist about any concerns</li>
+                    </ul>
+                </div>
+                <div class="aftercare-card aftercare-card--highlight">
+                    <div class="aftercare-card__num">✦</div>
+                    <h3 class="aftercare-card__title" data-es="Importante">Important</h3>
+                    <p class="aftercare-card__text" data-es="Pide a tu artista instrucciones personalizadas de cuidado. Cada tatuaje es diferente y cada piel reacciona de manera distinta.">
+                        Ask your artist for personalized aftercare instructions. Every tattoo and every skin is different.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews section" id="reviews">
+        <div class="section__inner">
+            <div class="reviews__header">
+                <span class="section__label">Experiences</span>
+                <h2 class="section__title" data-es="Experiencias">What travelers say</h2>
+            </div>
+            <div class="reviews__summary">
+                <div class="reviews__rating">
+                    <span class="reviews__stars">★★★★★</span>
+                    <span class="reviews__score">5.0</span>
+                    <span class="reviews__count">Based on traveler reviews</span>
+                </div>
+                <p class="reviews__highlight" data-es="Los viajeros destacan el trabajo limpio de fine line, el servicio amable y la atmósfera profesional.">
+                    Travelers highlight the clean fine line work, friendly service, and professional atmosphere.
+                </p>
+            </div>
+            <div class="reviews__grid">
+                <blockquote class="review-card">
+                    <p>"Serious and clean tattoo studio. The tattoo artist is very good and patient. Wide choice of designs. I recommend it."</p>
+                    <cite>— Via <a href="https://www.tripadvisor.com/Attraction_Review-g294314-d25438442-Reviews-Quilla_Tattoo_Cuzco-Cusco_Cusco_Region.html" target="_blank" rel="noopener">TripAdvisor</a></cite>
+                </blockquote>
+                <blockquote class="review-card">
+                    <p>"Tattoos came out fantastic, line work was amazing and the staff were very fun. Very clean shop as well, highly recommend."</p>
+                    <cite>— Via <a href="https://www.tripadvisor.com/Attraction_Review-g294314-d25438442-Reviews-Quilla_Tattoo_Cuzco-Cusco_Cusco_Region.html" target="_blank" rel="noopener">TripAdvisor</a></cite>
+                </blockquote>
+                <blockquote class="review-card">
+                    <p>"It was my first tattoo and everything turned out great. I 100% recommend Quilla Tattoo — a good memory of my trip to Cusco."</p>
+                    <cite>— Via <a href="https://www.tripadvisor.com/Attraction_Review-g294314-d25438442-Reviews-Quilla_Tattoo_Cuzco-Cusco_Cusco_Region.html" target="_blank" rel="noopener">TripAdvisor</a></cite>
+                </blockquote>
+                <blockquote class="review-card">
+                    <p>"Very clean and professional. Also English speaking which was very helpful. The whole place has a beautiful vibe. We would come back any time."</p>
+                    <cite>— Via <a href="https://wanderlog.com/place/details/7842271/quilla-tattoo-cusco" target="_blank" rel="noopener">Wanderlog</a></cite>
+                </blockquote>
+            </div>
+            <div class="reviews__cta">
+                <a href="https://www.tripadvisor.com/Attraction_Review-g294314-d25438442-Reviews-Quilla_Tattoo_Cuzco-Cusco_Cusco_Region.html" class="btn btn--outline" target="_blank" rel="noopener">Read reviews</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location section" id="location">
+        <div class="section__inner">
+            <div class="location__layout">
+                <div class="location__content">
+                    <span class="section__label">Find us</span>
+                    <h2 class="section__title" data-es="Ubicación">Centro Histórico, Cusco</h2>
+                    <div class="location__address">
+                        <p class="location__street">Calle Sta. Catalina Ancha 366</p>
+                        <p class="location__district">Centro Histórico, Cusco</p>
+                    </div>
+                    <div class="location__hours">
+                        <h4 data-es="Horario aproximado">Hours (confirm by WhatsApp)</h4>
+                        <div class="location__hours-row">
+                            <span>Mon — Sat</span>
+                            <span>10:00 — 19:30</span>
+                        </div>
+                        <div class="location__hours-row">
+                            <span>Sunday</span>
+                            <span>10:30 — 18:00</span>
+                        </div>
+                    </div>
+                    <a href="https://maps.app.goo.gl/ZQiHzLeqY1hPriba8" class="btn btn--primary" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Open in Google Maps</span>
+                    </a>
+                </div>
+                <div class="location__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d-71.955!3d-13.527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd60ca2eef6b7:0x880b3dad44a2e868!2sQuilla%20Tattoo%20Cusco!5e0!3m2!1sen!2spe!4v1"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Quilla Tattoo location in Centro Histórico, Cusco">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta section">
+        <div class="section__inner">
+            <div class="final-cta__content">
+                <span class="section__label">Get in touch</span>
+                <h2 class="final-cta__title" data-es="¿Planeas un tatuaje mientras visitas Cusco?">
+                    Planning a tattoo<br>while visiting Cusco?
+                </h2>
+                <p class="final-cta__text" data-es="Envía tu idea por WhatsApp y pregunta sobre disponibilidad. Estamos para ayudarte a crear algo único.">
+                    Send your idea by WhatsApp and ask about availability. We're here to help you create something unique.
+                </p>
+                <div class="final-cta__actions">
+                    <a href="https://wa.me/51952644702" class="btn btn--primary btn--large" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        <span>Book by WhatsApp</span>
+                    </a>
+                    <a href="https://www.instagram.com/quilla_tattoo" class="btn btn--outline btn--large" target="_blank" rel="noopener">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        <span>Follow on Instagram</span>
+                    </a>
+                </div>
+                <p class="final-cta__note" data-es="Responde en inglés y español · Citas por orden de llegada">We reply in English & Spanish · Walk-ins welcome, appointments recommended</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <span class="footer__logo">☽ Quilla</span>
+                    <p class="footer__tagline" data-es="Tatuajes fine line en el corazón de San Blas, Cusco.">Fine line tattoos in the heart of San Blas, Cusco.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="https://wa.me/51952644702" target="_blank" rel="noopener">WhatsApp</a>
+                    <a href="https://www.instagram.com/quilla_tattoo" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.tumblr.com/quilla-tattoo" target="_blank" rel="noopener">Tumblr</a>
+                    <a href="https://www.youtube.com/@quillatattoocusco" target="_blank" rel="noopener">YouTube</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__info">
+                    <p>Calle Sta. Catalina Ancha 366 · Centro Histórico · Cusco · Peru</p>
+                    <p>+51 952 644 702</p>
+                </div>
+                <div class="footer__legal">
+                    <p>☽ Visual demo · Not an official website</p>
+                    <p>Demo visual no oficial · 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LANGUAGE TOGGLE (fixed) -->
+    <div class="lang-toggle" id="langToggle">
+        <button class="lang-toggle__btn active" data-lang="en" onclick="setLang('en')">EN</button>
+        <span class="lang-toggle__sep">/</span>
+        <button class="lang-toggle__btn" data-lang="es" onclick="setLang('es')">ES</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
