@@ -107,6 +107,19 @@ const QuillaLang = {
         // Collect all bilingual elements
         this.elements = document.querySelectorAll('[data-es]');
         
+        // Pre-save original HTML for elements with formatting-only tags (e.g., <br>)
+        this.elements.forEach(el => {
+            if (!el.dataset.enHtml && el.children.length > 0) {
+                const formattingOnlyTags = ['br', 'wbr'];
+                const hasOnlyFormattingChildren = Array.from(el.children).every(child => {
+                    return formattingOnlyTags.includes(child.tagName.toLowerCase());
+                });
+                if (hasOnlyFormattingChildren) {
+                    el.dataset.enHtml = el.innerHTML;
+                }
+            }
+        });
+        
         // Check saved preference
         const saved = localStorage.getItem('quillaLang');
         if (saved === 'es') {
@@ -132,6 +145,16 @@ const QuillaLang = {
                 if (!el.dataset.en) {
                     el.dataset.en = el.textContent.trim();
                 }
+                // Store original EN HTML for elements with formatting-only tags (e.g., <br>)
+                if (!el.dataset.enHtml && el.children.length > 0) {
+                    const formattingOnlyTags = ['br', 'wbr'];
+                    const hasOnlyFormattingChildren = Array.from(el.children).every(child => {
+                        return formattingOnlyTags.includes(child.tagName.toLowerCase());
+                    });
+                    if (hasOnlyFormattingChildren) {
+                        el.dataset.enHtml = el.innerHTML;
+                    }
+                }
                 // Only update if element has no child elements (simple text)
                 if (el.children.length === 0) {
                     el.textContent = esText;
@@ -145,7 +168,7 @@ const QuillaLang = {
                     if (el.children.length === 0) {
                         el.textContent = el.dataset.en;
                     } else {
-                        this.updateElementText(el, el.dataset.en);
+                        this.updateElementText(el, el.dataset.en, true);
                     }
                 }
             }
@@ -161,7 +184,7 @@ const QuillaLang = {
         this.updateNotes();
     },
     
-    updateElementText(el, text) {
+    updateElementText(el, text, isRestore = false) {
         // For elements with simple structure (like headings with no children)
         if (el.children.length === 0) {
             el.textContent = text;
@@ -175,8 +198,13 @@ const QuillaLang = {
         });
         
         if (hasOnlyFormattingChildren) {
-            // Replace everything with just the translated text
-            el.textContent = text;
+            // On restore, use original HTML to preserve <br> tags
+            if (isRestore && el.dataset.enHtml) {
+                el.innerHTML = el.dataset.enHtml;
+            } else {
+                // Replace everything with just the translated text
+                el.textContent = text;
+            }
             return;
         }
         
